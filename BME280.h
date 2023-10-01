@@ -46,7 +46,7 @@ class BME280
   }
   public:
   uint8_t address = 0x76;
-  BME280(uint8_t addr){address=addr;}
+  BME280(uint8_t address){this->address=address;}
   bool begin(void) 
   {
     Wire.begin();                                
