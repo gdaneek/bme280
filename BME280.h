@@ -6,7 +6,6 @@
 // Всего одна структура. Больше не надо
 class BME280
 {
-  private:
   int16_t calibrateData[12];
   bool reset(void){if(!writeReg(0x0E,0xB6)) return false;_delay_ms(11);return true;}
   void bme280Sizing()
